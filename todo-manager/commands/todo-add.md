@@ -18,7 +18,7 @@ node ${CLAUDE_PLUGIN_ROOT}/scripts/todo.js add "<标题>"
 
 3. 命令会输出新添加的 TODO JSON，解析后向用户确认：
    - 显示 TODO 的 ID 和标题
-   - 告知用户可以用 `/todo-manager:list` 查看所有待办
+   - 告知用户可以用 `/todo-manager:todo-list` 查看所有待办
 
 ## 注意事项
 
