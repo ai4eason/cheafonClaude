@@ -8,7 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 开发前必读
 
-**在开发任何插件组件（commands、agents、skills、hooks、MCP）之前，必须先阅读 `plugin-dev-doc/开发文档.md` 中对应的参考链接：**
+**在开发任何插件组件（commands、agents、skills、hooks、MCP）之前，必须先阅读 `.plugin-dev-doc/开发文档.md` 中对应的参考链接：**
 
 | 组件类型 | 参考文档 |
 |---------|---------|

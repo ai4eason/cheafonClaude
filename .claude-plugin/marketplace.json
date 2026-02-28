@@ -11,6 +11,12 @@
       "source": "./daily-summary",
       "description": "AI 工作日志助理 - 渐进式总结当日对话，生成知识沉淀与导师建议",
       "version": "1.0.0"
+    },
+    {
+      "name": "todo-manager",
+      "source": "./todo-manager",
+      "description": "通过斜杠命令管理个人 TODO，支持添加、完成、列表查看和网页展示",
+      "version": "1.0.0"
     }
   ]
 }
