@@ -1,5 +1,5 @@
 ---
-name: done
+name: todo-done
 description: 将指定 TODO 标记为已完成
 argument-hint: <TODO ID>
 allowed-tools:
@@ -19,7 +19,7 @@ node ${CLAUDE_PLUGIN_ROOT}/scripts/todo.js done <ID>
 ```
 
 4. 命令输出更新后的 TODO JSON，向用户确认已完成
-5. 如果 ID 不存在，告知用户并建议使用 `/todo-manager:list` 查看有效 ID
+5. 如果 ID 不存在，告知用户并建议使用 `/todo-manager:todo-list` 查看有效 ID
 
 ## 注意事项
 
