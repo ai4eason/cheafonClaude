@@ -1,5 +1,4 @@
 ---
-name: done
 description: 将指定 TODO 标记为已完成
 argument-hint: <TODO ID>
 allowed-tools:

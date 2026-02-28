@@ -1,5 +1,4 @@
 ---
-name: add
 description: 添加一个新的 TODO 待办事项
 argument-hint: <待办事项标题>
 allowed-tools:

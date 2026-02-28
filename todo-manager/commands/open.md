@@ -1,5 +1,4 @@
 ---
-name: open
 description: 生成 TODO 网页并在浏览器中打开
 allowed-tools:
   - Bash

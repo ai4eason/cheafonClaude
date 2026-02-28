@@ -1,5 +1,4 @@
 ---
-name: list
 description: 查看所有 TODO 待办事项
 allowed-tools:
   - Bash
