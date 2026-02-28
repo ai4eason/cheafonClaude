@@ -1,5 +1,5 @@
 {
   "name": "todo-manager",
-  "version": "1.1.0",
-  "description": "通过斜杠命令管理个人 TODO，支持添加、完成、列表查看和网页展示"
+  "version": "1.2.0",
+  "description": "通过斜杠命令管理个人 TODO，支持添加和列表查看"
 }

@@ -78,6 +78,15 @@ allowed-tools: ["Read", "Bash", "Task"]
 claude --plugin-dir ./plugin-name
 ```
 
+## 版本管理
+
+插件有变更时，**必须同时更新以下两处的版本号**（保持一致）：
+
+1. `plugin-name/.claude-plugin/plugin.json` 中的 `version`
+2. `.claude-plugin/marketplace.json` 中对应插件的 `version`
+
+版本号不更新会导致用户端插件缓存不刷新，拉取到旧版本。
+
 ## Marketplace 配置
 
 根目录 `.claude-plugin/marketplace.json` 注册所有插件：
