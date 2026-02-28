@@ -1,5 +1,5 @@
 ---
-name: todo-list
+name: list
 description: 查看所有 TODO 待办事项
 allowed-tools:
   - Bash
@@ -20,7 +20,7 @@ node ${CLAUDE_PLUGIN_ROOT}/scripts/todo.js list
    - 每条显示：ID、状态标记（未完成用 `[ ]`，已完成用 `[x]`）、标题、创建日期
    - 底部显示统计信息（待完成/已完成/总计）
 
-3. 如果没有任何 TODO，告知用户可以用 `/todo-manager:todo-add <标题>` 添加
+3. 如果没有任何 TODO，告知用户可以用 `/todo-manager:add <标题>` 添加
 
 ## 输出格式示例
 
