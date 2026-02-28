@@ -56,11 +56,16 @@ tools: ["Read", "Write", "Glob", "Grep"]
 ---
 ```
 
+### Command 命名规范
+
+- 命令文件名必须以插件名为前缀，如 `todo-add.md`、`todo-list.md`（插件名为 `todo-manager` 时）
+- **不要使用** frontmatter 的 `name` 字段，命令名从文件名自动派生
+- 这样自动补全会显示为 `/todo-add (todo-manager)`，避免与其他插件命令冲突
+
 ### Command frontmatter 必填字段
 
 ```yaml
 ---
-name: command-name
 description: 命令描述
 argument-hint: "[参数提示]"
 allowed-tools: ["Read", "Bash", "Task"]
