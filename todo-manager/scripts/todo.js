@@ -69,14 +69,37 @@ function generateHtml() {
   const pending = todos.filter((t) => !t.done);
   const completed = todos.filter((t) => t.done);
 
+  const formatDuration = (start, end) => {
+    const ms = new Date(end) - new Date(start);
+    const minutes = Math.floor(ms / 60000);
+    const hours = Math.floor(minutes / 60);
+    const days = Math.floor(hours / 24);
+    if (days >= 1) {
+      const rh = hours % 24;
+      return rh > 0 ? `${days}d ${rh}h` : `${days}d`;
+    }
+    if (hours >= 1) {
+      const rm = minutes % 60;
+      return rm > 0 ? `${hours}h ${rm}m` : `${hours}h`;
+    }
+    return `${minutes}m`;
+  };
+
   const renderItem = (t) => {
     const status = t.done ? "completed" : "pending";
     const checkbox = t.done ? "checked" : "";
-    const dateStr = new Date(t.createdAt).toLocaleDateString("zh-CN");
+    let dateInfo;
+    if (t.done && t.doneAt) {
+      const doneStr = new Date(t.doneAt).toLocaleString("zh-CN", { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" });
+      const duration = formatDuration(t.createdAt, t.doneAt);
+      dateInfo = `完成于 ${doneStr}, 用时 ${duration}`;
+    } else {
+      dateInfo = new Date(t.createdAt).toLocaleDateString("zh-CN");
+    }
     return `<li class="todo-item ${status}">
       <input type="checkbox" ${checkbox} disabled />
       <span class="title">${escapeHtml(t.title)}</span>
-      <span class="date">${dateStr}</span>
+      <span class="date">${dateInfo}</span>
     </li>`;
   };
 
