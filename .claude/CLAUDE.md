@@ -97,6 +97,15 @@ claude --plugin-dir ./plugin-name
 - 配置说明（如有）
 - 包含的 commands/agents/skills 列表及简要说明
 
+## 隐私保护（强制）
+
+这是一个公开仓库。每次提交前**必须确保不包含任何隐私信息**：
+
+- **禁止提交**：真实邮箱、手机号、API key、token、密码、私钥等敏感数据
+- **禁止提交**：包含完整对话记录的日志文件、调试输出
+- **Git 身份**：提交时使用 `Cheafon <cheafon@example.com>`，不要暴露真实邮箱
+- 如果不确定某个文件是否安全，先加入 `.gitignore`
+
 ## Marketplace 配置
 
 根目录 `.claude-plugin/marketplace.json` 注册所有插件：
