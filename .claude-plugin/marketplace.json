@@ -17,6 +17,12 @@
       "source": "./todo-manager",
       "description": "通过斜杠命令管理个人 TODO，支持添加、完成、列表查看和网页展示",
       "version": "1.3.0"
+    },
+    {
+      "name": "vibe-trace",
+      "source": "./vibe-trace",
+      "description": "总结当前项目的 Claude Code 对话流程，生成 HTML 幻灯片演示 vibe coding 过程",
+      "version": "1.0.0"
     }
   ]
 }

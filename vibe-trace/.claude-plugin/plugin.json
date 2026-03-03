@@ -1,0 +1,5 @@
+{
+  "name": "vibe-trace",
+  "version": "1.0.0",
+  "description": "总结当前项目的 Claude Code 对话流程，生成 HTML 幻灯片演示 vibe coding 过程"
+}
