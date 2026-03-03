@@ -8,7 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 开发前必读
 
-**在开发任何插件组件（commands、agents、skills、hooks、MCP）之前，必须先阅读 `.plugin-dev-doc/开发文档.md` 中对应的参考链接：**
+**在开发任何插件组件（commands、agents、skills、hooks、MCP）之前，必须先阅读 `.claude/开发文档.md` 中对应的参考链接：**
 
 | 组件类型 | 参考文档 |
 |---------|---------|
@@ -78,14 +78,24 @@ allowed-tools: ["Read", "Bash", "Task"]
 claude --plugin-dir ./plugin-name
 ```
 
-## 版本管理
+## 版本管理（强制）
 
-插件有变更时，**必须同时更新以下两处的版本号**（保持一致）：
+每次修改插件内容时，**必须同步更新版本号**，即使只改了一行代码：
 
 1. `plugin-name/.claude-plugin/plugin.json` 中的 `version`
 2. `.claude-plugin/marketplace.json` 中对应插件的 `version`
 
-版本号不更新会导致用户端插件缓存不刷新，拉取到旧版本。
+两处版本号必须一致。版本号不更新会导致用户端插件缓存不刷新，拉取到旧版本。
+
+## README 规范（强制）
+
+每个插件开发完成后，**必须生成一个 `README.md`** 文件放在插件根目录下，内容应包含：
+
+- 插件名称和简介
+- 功能说明
+- 安装/使用方法
+- 配置说明（如有）
+- 包含的 commands/agents/skills 列表及简要说明
 
 ## Marketplace 配置
 
