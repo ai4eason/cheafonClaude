@@ -3,7 +3,6 @@ name: vibe-trace
 description: |
   生成 vibe trace / vibe coding 过程总结。将当前项目的 Claude Code 对话日志提炼为叙事大纲，并生成可视化 HTML 幻灯片演示。
   适用场景：用户想要总结开发过程、回顾对话历程、生成开发演示、查看 vibe coding 之旅。
-allowed-tools: ["Bash", "Read", "Glob", "Grep", "Write", "Task", "Skill"]
 ---
 
 你需要完成以下四个步骤，为当前项目生成一份 vibe coding 过程的 HTML 幻灯片演示。
