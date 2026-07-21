@@ -6,7 +6,7 @@
     "email": ""
   },
   "plugins": [
-{
+    {
       "name": "todo-manager",
       "source": "./todo-manager",
       "description": "通过斜杠命令管理个人 TODO，支持添加、完成、列表查看和网页展示",
@@ -22,6 +22,12 @@
       "name": "vibe-trace",
       "source": "./vibe-trace",
       "description": "总结当前项目的 Claude Code 对话流程，生成 HTML 幻灯片演示 vibe coding 过程",
+      "version": "1.0.0"
+    },
+    {
+      "name": "image-reader",
+      "source": "./image-reader",
+      "description": "使用通义千问视觉模型读取并描述图片内容，弥补当前 AI 模型不能读图的缺憾",
       "version": "1.0.0"
     }
   ]

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "image-reader": {
+      "description": "图片读取与描述工具，使用通义千问视觉模型分析图片内容",
+      "command": "uv",
+      "args": ["run", "--directory", "${CLAUDE_PLUGIN_ROOT}", "server/main.py"],
+      "env": {
+        "DASHSCOPE_API_KEY": "${DASHSCOPE_API_KEY}"
+      }
+    }
+  }
+}

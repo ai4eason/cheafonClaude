@@ -1,0 +1,13 @@
+{
+  "name": "image-reader",
+  "description": "使用通义千问视觉模型读取并描述图片内容，弥补当前 AI 模型不能读图的缺憾",
+  "version": "1.0.0",
+  "author": {
+    "name": "Cheafon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cheafon/cheafonClaude"
+  },
+  "license": "MIT"
+}
